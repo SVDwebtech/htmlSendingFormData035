@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: darkslategray;
+
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .9);
+
+    padding: 5rem;
+}
+
+.heading-h1 {
+    color: darkslategray;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.form-container label {
+    color: darkslategray;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: .5rem;
+
+}
+
+.input-label-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.input-label-container.message {
+    display: block;
+}
+
+.input-label-container.message label {
+    display: block;
+}
+
+.input-label-container.message textarea {
+    display: block;
+    width: 100%;
+}
+
+.input-label-container input {
+    flex: 1 0 100px;
+}
+
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    background-color: darkslategray;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    min-width: 10rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+input, textarea {
+    background-color: rgba(47, 79, 79, 0.678);
+    padding: .5rem;
+}
+
+::placeholder {
+    color: aliceblue;
+}

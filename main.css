@@ -1,3 +1,33 @@
+/* 
+    COLOR PALETTE
+    lightOlive:  rgb(96, 108, 56);
+    darkOlive:   rgb(40, 54, 24);
+    white: rgb(241, 241, 241);
+    mediumWhite: rgb(254, 250, 224);
+    lightBrown: rgb(221, 161, 94);
+    lightBrown: rgb(188, 108, 37);
+*/
+
+:root {
+    --color-lightOlive:rgb(96, 108, 56);
+    --color-darkOlive:rgb(40, 54, 24);
+    --color-white: rgb(241, 241, 241);
+    --color-mediumWhite: rgb(254, 250, 224);
+    --color-lightBrown: rgb(221, 161, 94);
+    --color-darkBrown: rgb(188, 108, 37);
+
+    --color-body-bg:rgb(40, 54, 24);
+    --color-formContainer-bg:rgb(96, 108, 56);
+    --color-inputLabel-f:rgb(221, 161, 94);
+    --color-bodyText:rgb(254, 250, 224);
+
+    --border-radius-medium: 2rem;
+
+    --spacing-margin-small: .5rem;
+    --spacing-margin-medium: 1rem;
+}
+
+
 *,
 *::before,
 *::after {
@@ -16,10 +46,10 @@ body {
     justify-content: center;
     align-items: center;
     
-    color: rgb(255, 255, 255);
+    color: var(--color-bodyText);
     font-size: 1.6rem;
     line-height: 1.6;
-    background-color: darkslategray;
+    background-color: var(--color-body-bg);
 
     min-height: 100vh;
 }
@@ -30,22 +60,28 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: aliceblue;
-    border-radius: 2rem;
+    background-color: var(--color-formContainer-bg);
+    border: 2px solid var(--color-white);
+    border-radius: var(--border-radius-medium);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, .9);
 
     padding: 5rem;
 }
 
 .heading-h1 {
-    color: darkslategray;
     text-align: center;
     text-transform: uppercase;
+    text-decoration-color: var(--color-white);
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
     letter-spacing: 3px;
+    /* border: 2px solid aliceblue;
+    border-radius: var(--border-radius-medium); */
+    padding: 1rem 3rem;
+    margin-bottom: var(--spacing-margin-medium);
 }
 
 .form-container label {
-    color: darkslategray;
     font-weight: 700;
     letter-spacing: 1px;
     margin-right: .5rem;
@@ -54,7 +90,7 @@ body {
 
 .input-label-container {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-margin-medium);
 }
 
 .input-label-container.message {
@@ -88,7 +124,7 @@ body {
 }
 
 input, textarea {
-    background-color: rgba(47, 79, 79, 0.678);
+    background-color: var(--color-darkOlive);
     padding: .5rem;
 }
 
